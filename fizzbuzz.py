@@ -1,16 +1,22 @@
 def fizzbuzz(x,y):
-  if not (isinstance(x,list) and isinstance(y,list)):
-    return "invalid input"
-  newlist = x+y
-  mylist =len(newlist)
-  if(mylist % 5==0 and mylist % 3==0):
-    return "fizzbuzz"
+  #divisable by 3 and 5 and returns a reminder 0
+    
+    if (x+y)%3 == 0 and (x+y)%5 == 0:
+        print('fizzbuzz')
+        return('fizzbuzz')
+#divisiable by 5 and returns reminder 0
+    
+    elif (x+y)%5 == 0:
+        print('buzz')
+        return('buzz')
+#divisiable by 3 and returns reminder 0
+    
+    elif (x+y)%3 == 0:
+        print('fizz')
+        return('fizz')
 
-  if( mylist % 5==0):
-    return "buzz"
-  if (mylist % 3==0):
-    return "fizz"
-
-  return len(newlist) 
-
-
+    else:
+        print(x+y)
+        
+#input the numbers to be divided by 3 or 5 
+fizzbuzz(25,15)
